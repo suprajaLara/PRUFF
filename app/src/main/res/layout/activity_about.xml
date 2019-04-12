@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/pruff_register_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pruff"/>
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:background="@color/transparent"
+            android:textSize="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pruff_register_logo">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+                    <EditText
+                        android:id="@+id/fName"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="5dp"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edtext_style"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#A9A9A9"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City of residence"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+                    <EditText
+                        android:id="@+id/lName"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="5dp"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edtext_style"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#A9A9A9"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height in feet"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+                    <EditText
+                        android:id="@+id/Phone"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="5dp"
+                        android:inputType="phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edtext_style"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#A9A9A9"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mother Tongue"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+                    <EditText
+                        android:id="@+id/dobb"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="5dp"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edtext_style"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#A9A9A9"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile you use"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+                    <EditText
+                        android:id="@+id/EmailIdRegister"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="5dp"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edtext_style"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#A9A9A9"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How frequent you use your mobile?"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        />
+                    <EditText
+                        android:id="@+id/passRegister"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="5dp"
+                        android:inputType="number"
+                        android:hint="In percentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edtext_style"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#A9A9A9"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMEI"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+                    <EditText
+                        android:id="@+id/rePassRegister"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edtext_style"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#A9A9A9"/>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:background="@drawable/btn_style"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:paddingRight="50dp"
+                    android:paddingLeft="50dp"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

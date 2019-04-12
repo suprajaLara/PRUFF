@@ -164,7 +164,7 @@ String userId = mDatabase.push().getKey();*/
 
                             if (task.isSuccessful()) {
                                 Toast.makeText(OneTimePassword.this, "Verification email sent to " + user.getEmail(), Toast.LENGTH_SHORT).show();
-                                Intent intent=new Intent(OneTimePassword.this,MainActivity.class);
+                                Intent intent=new Intent(OneTimePassword.this,About.class);
                                 startActivity(intent);
                             } else {
                                 /// String TAG = MainActivity.class.getSimpleName();
