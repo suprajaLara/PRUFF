@@ -12,12 +12,18 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity {
 
     private EditText fName,lName,Phone,Dob,Email_add,Pass,RePass;
     private Button login_register,alreadyRegister;
     //FirebaseAuth auth;
+   // DatabaseReference db;
+    //FirebaseUser user_id;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +31,7 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         //auth = FirebaseAuth.getInstance();
+        //db= FirebaseDatabase.getInstance().getReference();
 
         fName = findViewById(R.id.fName);
         lName = findViewById(R.id.lName);
@@ -57,6 +64,8 @@ public class Register extends AppCompatActivity {
                 String email = Email_add.getText().toString();
                 String password = Pass.getText().toString();
                 String repassword = RePass.getText().toString();
+
+                //String id=db.push().getKey();
 
                 if(TextUtils.isEmpty(Fname))
                 {
@@ -106,6 +115,14 @@ public class Register extends AppCompatActivity {
                     return;
                 }
 
+                //sending data to firebase
+
+             /*   user_id = FirebaseAuth.getInstance().getCurrentUser();
+                String uid = user_id.getUid();
+
+                User user=new User(Fname,Lname,Phoneno,Date,email);
+                db.child("profile").child(uid).setValue(user);*/
+
                 Intent i = new Intent(Register.this,OneTimePassword.class);
                 i.putExtra("PhoneNum",Phoneno);
                 i.putExtra("firstName",Fname);
@@ -119,5 +136,15 @@ public class Register extends AppCompatActivity {
         });
 
     }
+    @Override
+    public void onBackPressed() {
+
+        new AlertDialog.Builder(this).setMessage("Are you sure you want to exit?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Activities.this.finish();
+            }
+        }).setNegativeButton("No", null).show();
+    }
+
 }
 

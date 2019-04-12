@@ -1,52 +1,32 @@
 {
   "project_info": {
-    "project_number": "1049667380167",
-    "firebase_url": "https://pruff-app.firebaseio.com",
-    "project_id": "pruff-app",
-    "storage_bucket": "pruff-app.appspot.com"
+    "project_number": "826524867115",
+    "firebase_url": "https://pruff-cabac.firebaseio.com",
+    "project_id": "pruff-cabac",
+    "storage_bucket": "pruff-cabac.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1049667380167:android:e06b2cf9688bb787",
+        "mobilesdk_app_id": "1:826524867115:android:e06b2cf9688bb787",
         "android_client_info": {
           "package_name": "com.google.pruff"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "1049667380167-j2vlqkuk2ci725i3mu2hn56mdvb36f0d.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.pruff",
-            "certificate_hash": "0434c64b1b64939b6a082584a281bd1744a5ed50"
-          }
-        },
-        {
-          "client_id": "1049667380167-0slre514bpj8hecteusqe3oc6k1jb3p6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAoPCcW4lAh5OdFYI85KaafSz0yVmEuqWY"
+          "current_key": "AIzaSyCWJwChhYuqzj1RGH8OSSQgiamWZsXaDgI"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "1049667380167-0slre514bpj8hecteusqe3oc6k1jb3p6.apps.googleusercontent.com",
+              "client_id": "826524867115-aql0aadi3iis0l3l9t9frv46llcd3i27.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }
